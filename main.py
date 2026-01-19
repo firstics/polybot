@@ -1,4 +1,3 @@
-# Your first line of Python code
 import os
 import asyncio
 import json
@@ -261,7 +260,7 @@ async def monitor_user_trades(wallet_address: str, interval: int = 10,
                         telegram_message += f"<b>Wallet:</b> {activity.get('name', 'N/A')}\n"
                         telegram_message += f"📊 <b>Market:</b> {activity.get('title', 'N/A')}\n"
                         telegram_message += f"👀 <b>Type:</b> {activity.get('type', 'N/A')}\n"
-			            telegram_message += f"🎯 <b>Outcome:</b> {activity.get('outcome', 'N/A')}\n"
+                        telegram_message += f"🎯 <b>Outcome:</b> {activity.get('outcome', 'N/A')}\n"
                         telegram_message += f"💰 <b>Size:</b> {size} shares @ ${price}\n"
                         telegram_message += f"📈 <b>Side:</b> {activity.get('side', 'N/A')}\n"
                         telegram_message += f"💸 <b>Value:</b> ${value:.2f}\n"
