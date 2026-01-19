@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  polymarket-monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: polymarket-monitor
+    restart: unless-stopped
+    environment:
+      # Optional: Override these in a .env file or here
+      - TZ=UTC
+    # Uncomment to use environment variables for configuration
+    # env_file:
+    #   - .env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # Resource limits (optional)
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.1'
+          memory: 128M
