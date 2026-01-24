@@ -286,7 +286,7 @@ async def main():
     
     # Configuration - List of wallet addresses to monitor
     wallets = [
-        "0x37e4728b3c4607fb2b3b205386bb1d1fb1a8c991",
+        "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
         "0x006cc834cc092684f1b56626e23bedb3835c16ea"
         # Add more wallet addresses here as needed:
         # "0x1234567890abcdef1234567890abcdef12345678",
